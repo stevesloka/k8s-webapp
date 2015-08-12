@@ -1,3 +1,17 @@
+<style>
+  .blink {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, start);
+  }
+  @keyframes blink {
+    80% {
+      visibility: hidden;
+    }
+  }
+</style>
+
 <div layout="vertical" layout-fill>
 
   <md-content style="width: 100%">
@@ -7,7 +21,7 @@
 
     <section class="jumbotron">
       <h1>DevOps Days Pixburgh - 2015!</h1>
-
+      <h3 style="color: white" class="blink">OMG the bacon!!</h3>
       <p>
         With ♥ thanks to the contributions of<acme-malarkey />
       </p>
